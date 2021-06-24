@@ -12,6 +12,7 @@ import "normalize.css"
 
 import Header from "./Header/header"
 import "./layout.css"
+import Global from "../theme/global.js"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Global />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
