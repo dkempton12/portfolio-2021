@@ -1,0 +1,17 @@
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+  transform: rotate(-6deg);
+
+  .initial {
+    color: #00c957;
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    height: 6px;
+    background-color: #ff8243;
+  }
+}
