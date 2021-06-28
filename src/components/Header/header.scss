@@ -1,3 +1,28 @@
 .header {
+  height: 120px;
   background: var(--darkblue);
+
+  .main-navigation {
+    position: relative;
+
+    &__list {
+      max-width: 500px;
+      position: absolute;
+      top: 2rem;
+      right: 4rem;
+      display: flex;
+      gap: 3rem;
+      list-style-type: none;
+
+      &__item {
+        color: var(--white);
+
+        a {
+          color: var(--white);
+          text-decoration: none;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 }

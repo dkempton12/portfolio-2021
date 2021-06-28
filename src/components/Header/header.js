@@ -6,15 +6,12 @@ import classes from "./header.scss"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
+    <nav className="main-navigation">
+      <ul className="main-navigation__list">
+        <li className="main-navigation__list__item">
           <Link to="/about">About</Link>
         </li>
-        <li>
+        <li className="main-navigation__list__item">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
