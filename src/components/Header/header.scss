@@ -1,6 +1,10 @@
+// nav link font
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 .header {
   height: 120px;
   background: var(--darkblue);
+  font-family: "Permanent Marker", cursive;
 
   .main-navigation {
     position: relative;
@@ -15,12 +19,25 @@
       list-style-type: none;
 
       &__item {
-        color: var(--white);
+        color: #00c957;
 
         a {
-          color: var(--white);
+          color: #00c957;
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: 2rem;
+
+          &.active {
+            color: #fe5a1d;
+
+            &:after {
+              display: block;
+              margin-top: 3px;
+              content: "";
+              height: 4px;
+              width: 100%;
+              background-color: var(--white);
+            }
+          }
         }
       }
     }
