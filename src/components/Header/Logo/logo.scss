@@ -1,17 +1,23 @@
-.logo {
-  font-size: 40px;
-  font-weight: bold;
-  color: var(--white);
-  transform: rotate(-6deg);
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 
-  .initial {
-    color: #00c957;
-  }
+.logo {
+  margin-left: 2rem;
+  font-family: "Suez One", serif;
+  font-size: 60px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  transform: rotate(-4deg);
 
   &:after {
     display: block;
     content: "";
-    height: 6px;
+    margin-top: -10px;
+    height: 8px;
     background-color: #ff8243;
+  }
+
+  .initial {
+    color: #00c957;
   }
 }
