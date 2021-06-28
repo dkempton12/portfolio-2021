@@ -32,6 +32,10 @@ img {
 h1 {
   font-size: 6rem;
 }
+
+a {
+  text-decoration: none;
+}
 `
 
 export default Global
