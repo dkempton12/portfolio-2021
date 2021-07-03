@@ -20,6 +20,7 @@ const Global = createGlobalStyle`
 html {
   font-size: 15px;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 body {

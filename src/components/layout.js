@@ -13,6 +13,7 @@ import "normalize.css"
 import Header from "./Header/header"
 import Global from "../theme/Global.js"
 import Typography from "../theme/Typography.js"
+import Footer from "./Footer/Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -38,16 +39,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
       </div>
+      <Footer />
     </>
   )
 }
