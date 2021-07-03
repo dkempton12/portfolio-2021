@@ -11,11 +11,15 @@ const Global = createGlobalStyle`
   --orange: #ff8c00;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 15px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -30,10 +34,6 @@ img {
   margin: 0;
   border: none;
   max-width: 100%;
-}
-
-h1 {
-  font-size: 6rem;
 }
 
 a {

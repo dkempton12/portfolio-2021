@@ -3,8 +3,9 @@ import styled from "styled-components"
 
 const LogoStyled = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
-
-  margin-left: 2rem;
+  position: absolute;
+  left: 4rem;
+  top: 1rem;
   font-family: "Suez One", serif;
   font-size: 60px;
   font-weight: normal;

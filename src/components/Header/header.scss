@@ -3,19 +3,23 @@
 
 .header {
   // position: relative;
-  height: 120px;
+  height: 140px;
+  padding: 2rem;
   background: var(--darkblue);
   font-family: "Permanent Marker", cursive;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.8);
 
   .main-navigation {
     position: relative;
+    display: flex;
+    align-items: center;
 
     &__list {
       max-width: 500px;
       position: absolute;
-      top: 2rem;
+      top: 1rem;
       right: 4rem;
       display: flex;
       gap: 3rem;
