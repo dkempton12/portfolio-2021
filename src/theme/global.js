@@ -27,7 +27,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  background: rgb(40, 32, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 32, 164, 1) 0%,
+    rgba(27, 27, 164, 1) 35%,
+    rgba(20, 35, 87, 1) 100%
+  );
   color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 img {
