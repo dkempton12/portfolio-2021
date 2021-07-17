@@ -15,6 +15,8 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
   color: var(--white);
 }
 
@@ -38,6 +40,18 @@ h3 {
   @media (min-width: 768px) {
     font-size: 60px;
   }
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+a {
+  font-size: 1.2rem;
+  color: var(--white);
+  text-decoration: none;
 }
 `
 

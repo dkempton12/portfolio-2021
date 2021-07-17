@@ -8,7 +8,7 @@ const AboutPage = () => (
   <Layout>
     <Seo title="About Me" />
     <h1>About Page</h1>
-    <Link to="/">Go back to the homepage</Link>
+
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -36,6 +36,8 @@ const AboutPage = () => (
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     </p>
+
+    <Link to="/contact">Contact Me</Link>
   </Layout>
 )
 
