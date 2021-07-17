@@ -9,11 +9,12 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "normalize.css"
+import "./layout.scss"
 
-import Header from "./Header/header"
-import Global from "../theme/Global.js"
-import Typography from "../theme/Typography.js"
-import Footer from "./Footer/Footer"
+import Header from "../Header/header"
+import Global from "../../theme/Global.js"
+import Typography from "../../theme/Typography.js"
+import Footer from "../Footer/Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,17 +30,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Global />
+
       <Typography />
+
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+
+      <div className="container">
         <main>{children}</main>
       </div>
+
       <Footer />
     </>
   )
