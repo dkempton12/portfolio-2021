@@ -4,10 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import MainHeading from "../components/MainHeading/MainHeading"
+
 const Contact = () => (
   <Layout>
     <Seo title="Contact Me" />
-    <h1>Contact Page</h1>
+    <MainHeading title="Contact Me" align="left" />
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )

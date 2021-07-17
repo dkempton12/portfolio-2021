@@ -21,11 +21,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  margin: 2rem 0;
   font-size: 60px;
   font-family: "Suez One", serif;
+  text-align: center;
+  letter-spacing: 0.8px;
+  line-height: 2;
   color: var(--white);
-  letter-spacing: 0.5px;
-  margin: 2rem 0;
 
   @media (min-width: 768px) {
     font-size: 75px;
@@ -52,6 +54,18 @@ a {
   font-size: 1.2rem;
   color: var(--white);
   text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 `
 

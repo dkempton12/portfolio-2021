@@ -5,11 +5,16 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import MainHeading from "../components/MainHeading/MainHeading"
+import SubHeading from "../components/SubHeading/SubHeading"
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1 style={{ textAlign: "center" }}>Danny Kempton</h1>
-    <h3 style={{ marginBottom: "50px" }}>Web Developer</h3>
+
+    <MainHeading title="Danny Kempton" />
+
+    <SubHeading title="Web Developer" align="center" />
     {/* <StaticImage
       src="../images/gatsby-astronaut.png"
       width={300}
