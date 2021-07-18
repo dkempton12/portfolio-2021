@@ -13,6 +13,12 @@ const LogoStyled = styled.div`
   color: var(--white);
   transform: rotate(-4deg);
 
+  &.logo-anim {
+    top: 0.4rem;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+  }
+
   &:after {
     display: block;
     content: "";
@@ -32,13 +38,13 @@ function Logo() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-        setLogoScrollAnim(window.pageYOffset > 140)
+        setLogoScrollAnim(window.pageYOffset > 60)
       )
     }
   }, [])
 
   return (
-    <LogoStyled>
+    <LogoStyled className={`${logoScrollAnim ? "logo-anim" : ""}`}>
       D<span className="initial">K</span>
     </LogoStyled>
   )

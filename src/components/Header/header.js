@@ -11,7 +11,7 @@ function Header({ siteTitle }) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-        setSmallHeader(window.pageYOffset > 140)
+        setSmallHeader(window.pageYOffset > 60)
       )
     }
   }, [])
