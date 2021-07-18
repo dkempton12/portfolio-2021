@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 1.5rem 2rem 1.5rem;
+  padding: var(--header-height) 1.5rem 2rem 1.5rem;
 
   @media (min-width: 768px) {
     padding: var(--header-height) 2rem 4rem 2rem;
