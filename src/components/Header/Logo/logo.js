@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 const LogoStyled = styled.div`
@@ -27,6 +27,16 @@ const LogoStyled = styled.div`
 `
 
 function Logo() {
+  const [logoScrollAnim, setLogoScrollAnim] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setLogoScrollAnim(window.pageYOffset > 140)
+      )
+    }
+  }, [])
+
   return (
     <LogoStyled>
       D<span className="initial">K</span>

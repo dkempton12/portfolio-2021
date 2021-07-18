@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
@@ -6,8 +6,18 @@ import "./header.scss"
 import Logo from "./Logo/logo"
 
 function Header({ siteTitle }) {
+  const [smallHeader, setSmallHeader] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setSmallHeader(window.pageYOffset > 140)
+      )
+    }
+  }, [])
+
   return (
-    <header className="header">
+    <header className={`header ${smallHeader ? "small-header" : ""}`}>
       <Link to="/">
         <Logo />
       </Link>
