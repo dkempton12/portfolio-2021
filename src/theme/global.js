@@ -9,6 +9,9 @@ const Global = createGlobalStyle`
   --darkblue: #191970;
   --green: #3cb371;
   --orange: #ff8c00;
+  
+  // for accounting header height
+  --header-height: 140px;
 }
 
 * {

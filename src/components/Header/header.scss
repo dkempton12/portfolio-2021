@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 .header {
-  // position: relative;
-  height: 140px;
+  position: fixed;
+  height: var(--header-height);
+  width: 100%;
   padding: 2rem;
   background: var(--darkblue);
   font-family: "Permanent Marker", cursive;
