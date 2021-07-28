@@ -3,12 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
+import Card from "../components/Card/Card"
 import MainHeading from "../components/MainHeading/MainHeading"
 
 const AboutPage = () => (
   <Layout>
     <Seo title="About Me" />
-
     <MainHeading title="About Me" align="left" />
 
     <p>
