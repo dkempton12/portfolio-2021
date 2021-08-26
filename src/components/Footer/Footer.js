@@ -8,13 +8,17 @@ import linkedInLogo from "../../assets/images/svg/linkedin.svg"
 function Footer() {
   return (
     <footer className="footer">
-      <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+      <p>Find me elsewhere online!</p>
       <div className="footer__images">
         <span className="footer-social">
-          <img src={gitLogo} alt="GitHub Account" />
+          <a href="https://github.com/dkempton12" target="_blank">
+            <img src={gitLogo} alt="GitHub Account" />
+          </a>
         </span>
         <span className="footer-social">
-          <img src={linkedInLogo} alt="LinkedIn Account" />
+          <a href="https://www.linkedin.com/in/dkempton12" target="_blank">
+            <img src={linkedInLogo} alt="LinkedIn Account" />
+          </a>
         </span>
       </div>
       <span>
