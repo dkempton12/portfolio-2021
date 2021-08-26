@@ -20,13 +20,33 @@
   padding-bottom: 0;
 }
 
+.footer__contact-heading {
+  font-size: 1.5rem;
+
+  span.find-online {
+    font-style: italic;
+    border-bottom: 4px solid #00c957;
+  }
+
+  span.exclamation {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ff8243;
+  }
+}
+
 .footer__images {
   margin-bottom: 15px;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 
   .footer-social img {
     height: 44px;
     width: 44px;
+    transition: 0.4s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

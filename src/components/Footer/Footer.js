@@ -8,7 +8,10 @@ import linkedInLogo from "../../assets/images/svg/linkedin.svg"
 function Footer() {
   return (
     <footer className="footer">
-      <p>Find me elsewhere online!</p>
+      <p className="footer__contact-heading">
+        Find me elsewhere <span className="find-online">online</span>
+        <span className="exclamation"> !</span>
+      </p>
       <div className="footer__images">
         <span className="footer-social">
           <a href="https://github.com/dkempton12" target="_blank">
