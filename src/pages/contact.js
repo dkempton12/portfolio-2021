@@ -16,12 +16,12 @@ const Contact = () => (
     <MainHeading title="Contact Me" align="left" />
     <Form>
       <FormField>
-        <Label labelText="Your Name" htmlFor="name">
+        <Label labelText="Your Name" htmlFor="name" />
         <Input type="text" id="name" name="name" />
       </FormField>
 
       <FormField>
-        <Label labelText="Your E-mail" htmlFor="email">
+        <Label labelText="Your E-mail" htmlFor="email" />
         <Input type="email" id="email" name="email" />
       </FormField>
     </Form>
